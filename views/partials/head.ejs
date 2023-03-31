@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/css/materialize.min.css">
+    <script src="/js/materialize.min.js"></script>
+    <script src="/js/prototypes.js"></script>
+    <script src="/js/Pokemon.js"></script>
+    <script src="js/getPokemon.js"></script>
+    <title>PokeDex</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper indigo lighten-4">
+            <a href="/" class="brand-logo center">PokeDex</a>
+            <form action='search' method="post" class=" right hide-on-med-and-down" id="form1">
+                <div class="input-field" style="max-width: 400pt;">
+                    <input id="search" type="search" name="name" required onkeyup="getBlogs(this.value,0);">
+                    <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                    <i class="material-icons">close</i>
+                    <div id="searchResults"></div>
+                </div>
+            </form>
+            <ul class="hide-on-med-and-down">
+                <li><a href="/pikachu">Pikachu</a></li>
+                <li><a href="/bulbasaur">Bulbasaur</a></li>
+                <li><a href="/charmander">Charmander</a></li>
+            </ul>
+        </div>
+    </nav>
